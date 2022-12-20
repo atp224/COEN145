@@ -1,0 +1,19 @@
+<<comment for i in 1 2 4 8 16 28 
+do
+        export OMP_PROC_BIND=true; export OMP_PLACES=sockets; ./omp /WAVE/projects/COEN-145-Fa22/data/pr3/1000.graph 100 $i
+done
+
+for i in 1 2 4 8 16 28
+do
+        export OMP_PROC_BIND=true; export OMP_PLACES=sockets; ./omp /WAVE/projects/COEN-145-Fa22/data/pr3/5000.graph 100 $i
+done
+
+for i in 1 2 4 8 16 28
+do
+        export OMP_PROC_BIND=true; export OMP_PLACES=sockets; ./omp /WAVE/projects/COEN-145-Fa22/data/pr3/10000.graph 100 $i
+done
+comment
+for i in 4 8 16 28
+do
+        export OMP_PROC_BIND=true; export OMP_PLACES=sockets; ./omp /WAVE/projects/COEN-145-Fa22/data/pr3/20000.graph 100 $i
+done

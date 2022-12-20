@@ -1,0 +1,78 @@
+rm -f matmult
+rm -f matmult_omp
+g++ -O3 -Wall -Wextra -o matmult matmult.c
+g++ -O3 -Wall -Wextra -fopenmp -o matmult_omp matmult_omp.c
+
+--------------------------------------
+nrows: 1000, ncols: 1000, ncols2: 1000
+--------------------------------------
+Serial Time is 1.230000 seconds
+Block Time is 1.440623 seconds
+Tiling Time is 1.506811 seconds
+Block Time is 0.731422 seconds
+Tiling Time is 1.145188 seconds
+Block Time is 0.383052 seconds
+Tiling Time is 0.783077 seconds
+Block Time is 0.282022 seconds
+Tiling Time is 0.285797 seconds
+Block Time is 0.267472 seconds
+Tiling Time is 0.014958 seconds
+Block Time is 0.247381 seconds
+Tiling Time is 0.014950 seconds
+Block Time is 0.185160 seconds
+Tiling Time is 0.011745 seconds
+Block Time is 0.178711 seconds
+Tiling Time is 0.008338 seconds
+Block Time is 0.165550 seconds
+Tiling Time is 0.011629 seconds
+Block Time is 0.139414 seconds
+Tiling Time is 0.0088 seconds
+--------------------------------------
+nrows: 1000, ncols: 2000, ncols2: 5000
+--------------------------------------
+Serial Time is 18.390000 seconds
+Block Time is 16.315030 seconds
+Tiling Time is 14.536162 seconds
+Block Time is 8.526269 seconds
+Tiling Time is 9.428845 seconds
+Block Time is 4.729722 seconds
+Tiling Time is 4.537983 seconds
+Block Time is 2.437618 seconds
+Tiling Time is 2.844681 seconds
+Block Time is 1.717617 seconds
+Tiling Time is 0.158501 seconds
+Block Time is 1.514591 seconds
+Tiling Time is 0.143539 seconds
+Block Time is 1.303253 seconds
+Tiling Time is 0.095955 seconds
+Block Time is 1.028035 seconds
+Tiling Time is 0.095987 seconds
+Block Time is 0.886144 seconds
+Tiling Time is 0.092698 seconds
+Block Time is 0.810669 seconds
+Tiling Time is 0.648457 seconds
+--------------------------------------
+nrows: 9000, ncols: 2500, ncols2: 3750
+--------------------------------------
+Serial Time is 188.140000 seconds
+Block Time is 138.080948 seconds
+Tiling Time is 122.647753 seconds
+Block Time is 70.722522 seconds
+Tiling Time is 104.195112 seconds
+Block Time is 39.049934 seconds
+Tiling Time is 51.772356 seconds
+Block Time is 19.977427 seconds
+Tiling Time is 5.597734 seconds
+Block Time is 13.131386 seconds
+Tiling Time is 1.128920 seconds
+Block Time is 11.557684 seconds
+Tiling Time is 1.145326 seconds
+Block Time is 10.129118 seconds
+Tiling Time is 1.045443 seconds
+Block Time is 8.060976 seconds
+Tiling Time is 1.207916 seconds
+Block Time is 6.821952 seconds
+Tiling Time is 1.322821 seconds
+Block Time is 5.929740 seconds
+Tiling Time is 0.927234 seconds
+
